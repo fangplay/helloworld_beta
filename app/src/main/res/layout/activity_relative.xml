@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".RelativeActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="#ed3551"
+        android:padding="16dp"
+        android:text="1"
+        /><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="#e26431"
+        android:padding="16dp"
+        android:text="2"
+        android:layout_centerHorizonal="true"
+        /><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="#3d231f"
+        android:padding="16dp"
+        android:text="3"
+        android:layout_centerHorizonal="true"
+        /><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="#ed3551"
+        android:padding="16dp"
+        android:text="4"
+        /><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="#e26431"
+        android:padding="16dp"
+        android:text="5"
+        android:layout_centerVertizonal="true"
+        /><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="#3d231f"
+        android:padding="16dp"
+        android:text="6"
+        android:layout_centerRight="true"
+        />
 </android.support.constraint.ConstraintLayout>
