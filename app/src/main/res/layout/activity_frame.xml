@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FrameActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ed3551"
+        android:padding="16dp"
+        android:text="@string/one"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#e26431"
+        android:padding="16dp"
+        android:text="@string/two"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:background="#3d231f"
+        android:padding="16dp"
+        android:text="@string/three"
+        android:textSize="30sp" />
+
+</FrameLayout>
