@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearActivity">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,59 +14,96 @@
     android:orientation="vertical"
     tools:context=".LinearActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
+    <CheckBox
+        android:id="@+id/checkbox_meat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="Text1"
-        android:layout_weight="1"
-        android:background="#ED4435"
-        /><TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="Text2"
-        android:layout_weight="1"
-        android:background="#ede735"
-        /><TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="Text3"
-        android:layout_weight="1"
-        android:background="#358eed"
-        />
-    </LinearLayout>
+        android:onClick="onCheckboxClicked"
+        android:text="meat"
+        android:textSize="25sp" />
 
-    <LinearLayout
+    <CheckBox
+        android:id="@+id/checkbox_cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="cheese"
+        android:textSize="25sp" />
+
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_pirates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Pirate"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radio_ninjas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Ninja"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
         <TextView
-        android:layout_width="wrap_content"
+            android:id="@+id/tvOutput0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="เฮ้ยนี่มันเพลงอะไร  บางคนฟังแล้วเขาก็ไม่เข้าใจ"
+            android:textSize="55sp" />
+
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/tvOutput1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="Text1"
-        android:layout_weight="1"
-        android:background="#ED4435"
-        /><TextView
-        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:textSize="65sp" />
+    <TextView
+        android:id="@+id/tvOutput2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="Text2"
-        android:layout_weight="1"
-        android:background="#ede735"
-        /><TextView
-        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:textSize="65sp" />
+    <TextView
+        android:id="@+id/tvOutput3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="Text3"
-        android:layout_weight="1"
-        android:background="#358eed"
-        />
-    </LinearLayout>
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_selector"
+        android:text="Beta Test"
+        android:gravity="center"
+        android:textSize="65sp" />
+    <TextView
+        android:id="@+id/tvOutput4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_selector"
+        android:text="Beta Test"
+        android:gravity="center"
+        android:textSize="65sp" />
 
 
 </LinearLayout>
+</ScrollView>

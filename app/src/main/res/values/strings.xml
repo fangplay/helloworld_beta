@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
-    <string name="one">One</string>
-    <string name="two">Two</string>
-    <string name="three">Three</string>
+    <string name="app_name">Helloworld Beta</string>
+    <string name="button_selector">button_selector</string>
 </resources>

@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ContraintActivity" />
-        <activity android:name=".LinearActivity" />
-        <activity android:name=".RelativeActivity"></activity>
-        <activity android:name=".FrameActivity">
+        <activity android:name=".LinearActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ContraintActivity" />
+        <activity android:name=".FrameActivity" />
+        <activity android:name=".RelativeActivity"></activity>
     </application>
 
 </manifest>
